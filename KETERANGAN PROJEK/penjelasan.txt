@@ -1,0 +1,14 @@
+Silakan import terlebih dahulu database yang sudah dibuat pada folder database.
+
+
+Untuk mengakses halaman admin, login ke halaman login admin :
+username : admin	
+password : admin123
+
+
+
+
+Untuk mengakses halaman user, dapat melakukan registerasi terlebih dahulu.
+Namun boleh menggunakan akun bawaan 
+username : iqbal
+password : iqbal

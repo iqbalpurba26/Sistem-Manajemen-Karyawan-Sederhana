@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Aleo&family=Alice&family=Arima+Madurai&family=Bree+Serif&family=Coustard&family=El+Messiri:wght@500&family=Lobster+Two&family=Merienda:wght@700&family=Pacifico&family=Philosopher:wght@400;700&family=Poppins&family=Zilla+Slab:wght@500&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  background: #62A388;
+  padding: 20px;
+  width: 100%;
+  height: 30px;
+}
+
+.left_area h3 {
+  color: #fff;
+  margin: 0;
+  font-size: 22px;
+  font-weight: 900;
+  text-align: center;
+  font-family: "Philosopher", sans-serif;
+}
+
+#btn {
+  padding: 5px;
+  float: right;
+  color: #fff;
+  margin-top: -28px;
+  font-size: 20px;
+  margin-right: 40px;
+}
+
+#btn:hover {
+  cursor: pointer;
+}
+
+#admin {
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  border-top: 1px solid #fefe;
+  border-bottom: 1px solid #fefe;
+  text-align: center;
+
+}
+
+.sidebar {
+  background: #62A388;
+  padding-top: 30px;
+  position: fixed;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  margin-top: 70px;
+  transition: all 0.5s ease;
+  font-family: "El Messiri", sans-serif;
+  overflow-y: auto;
+}
+
+.logo_profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar.active p{
+  margin-left: 190px;
+}
+
+.sidebar.active p span{
+  display: none;
+}
+
+.sidebar.active {
+  left: -190px;
+  transition: all 0.5s ease;
+}
+.sidebar .logo {
+  margin-bottom: 10px;
+  transition: all 0.5s ease;
+
+
+}
+.sidebar.active .logo {
+  display: none;
+  transition: all 0.1s ease;
+}
+
+.sidebar a {
+  color: #fff;
+  display: block;
+  width: 100%;
+  line-height: 55px;
+  text-decoration: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+.sidebar a span {
+  font-family: "El Messiri", sans-serif;
+}
+
+.sidebar.active a {
+  font-size: 20px;
+  margin-left: 170px;
+  width: 80%;
+  transition: all 0.5s ease;
+}
+
+
+.sidebar.active a span {
+  display: none;
+  transition: all 0.5s ease;
+}
+
+.sidebar a:hover {
+  background: #9beac9;
+  border-radius: 10px;
+  color: rgb(68, 68, 68);
+}
+
+.sidebar.active a:hover {
+  border-radius: 0px;
+  padding-right: 0px;
+}
+
+.sidebar i {
+  padding-right: 10px;
+}
+
+.sidebar #logout {
+  color: rgb(233, 41, 20);
+}
+
+
+.content {
+  padding-top: 80px;
+  padding-left: 270px;
+  margin-right: 25px;
+  transition: all 0.5s ease;
+  text-align: justify;
+}
+
+
+.sidebar.active ~ .content {
+  padding-left: 80px;
+  transition: all 0.5s ease;
+}
+
+
+.sidebar.active ~ .content {
+  left: 280px;
+  transition: all 0.5s ease;
+}
+
+.content table#tampil {
+  margin-top: 50px;
+  border-collapse: collapse;
+  border: none;
+
+}
+
+
+
+.content table#tampil tbody tr td{
+  padding: 10px;
+
+}
+
+.content table#tampil tbody tr:nth-child(odd){
+  background-color: #c5e6d8;
+}
+
+.content table#tampil tbody tr:hover{
+  background-color: #b6e3d1;
+}
+
+.content table#tambah {
+  padding-top: 50px;
+}
+.content table#tambah tr td{
+  padding: 10px;
+}
+
+.content table#tambah input {
+  width: 60%;
+  height: 30px;
+  border: none;
+}
+
+.content table#tambah tr td:nth-child(odd){
+  text-align: right;
+}
+
+.content form#tambah {
+  margin-top: 10px;
+  background-color: rgba(210, 243, 226, 0.933);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.content form#tambah button {
+  margin-top: 100px;
+  padding:10px 30px;
+  font-size: 15px;
+  border: none;
+  background-color: rgb(218, 218, 218);
+  background-color:#098c55 ;
+  color: #fff;
+  border-radius: 10px;
+}
+.content form#tambah button:hover {
+  cursor: pointer;
+}
+
+.content .tabel_aksi {
+  text-align: center;
+}
+.content .tabel_aksi a {
+  text-decoration: none;
+  font-family: "El Messiri", sans-serif;
+  
+}
+
+
+.content #tbl-ubah {
+  background-color: #098c55;
+  padding: 4px 10px;
+  border-radius: 5px;
+  color: #fff;
+
+}
+
+.content #tbl-hapus {
+  background-color: #c00a0a;
+  padding: 4px 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.content .home-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #242424;
+  padding-inline-end: 12px 24px;
+  background-color: #d82303;
+  color: #ffff;
+  padding: 5px 5px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
+  .sidebar {
+    display: none;
+  }
+
+  .left_area h3 {
+    text-align: left;
+  }
+
+
+  .sidebar.active ~ .sidebar_mobile {
+    display: block;
+  }
+
+  .content {
+    padding-top: 60px;
+    padding-left: 20px;
+    margin-right: 20px;
+    transition: all 0.5s ease;
+    text-align: justify;
+  }
+  .sidebar.active ~ .content {
+    padding-left: 20px;
+    transition: all 0.5s ease;
+  }
+
+  .sidebar.active ~ .content a {
+    pointer-events: none;
+  }
+}
